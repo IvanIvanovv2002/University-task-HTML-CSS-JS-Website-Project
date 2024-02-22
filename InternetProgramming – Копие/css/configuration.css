@@ -1,0 +1,64 @@
+.text-center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.centered {
+  margin: 0 auto;
+}
+
+.orange {
+  color: orange;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.skyblue {
+  color: deepskyblue;
+}
+
+.warning {
+  color: firebrick;
+  font-weight: bolder;
+}
+
+.title-smaller{
+  margin-top: 1em;
+  text-align: center;
+  font-size: 36px;
+  color: darkorange;
+}
+
+.title-smaller:hover {
+  color: orange;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.description {
+  font-size: 20px;
+  margin-bottom: 0.5em;
+}
+
+.description:hover {
+  font-size: 21px;
+  margin-bottom: 0.5em;
+}
+
+.description-medium {
+  font-size: 24px;
+  margin-bottom: 0.5em;
+}
+
+.description-medium:hover {
+  font-size: 25px;
+  margin-bottom: 0.5em;
+}
+

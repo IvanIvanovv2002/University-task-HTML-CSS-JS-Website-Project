@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript-Functions</title>
+  <link href="../css/configuration.css" rel="stylesheet">
+  <link href="../css/html.css" rel="stylesheet">
+</head>
+<body>
+<header>
+  <h1 class="text-center title-yellow">Масиви</h1>
+  <hr>
+</header>
+<main>
+  <p class="description-medium">Функциите в <span class="yellow">JavaScript</span> са основен строителен блок на езика. Те позволяват на програмистите да създават блокове от код, които могат да се изпълняват повторно и да се преизползват в различни части на програмата. Ето някои ключови характеристики и аспекти на функциите в <span class="yellow">JavaScript</span>:</p>
+  <ul>
+    <li class="description"><span class="bold">Създаване на функции: </span>Функциите в JavaScript могат да бъдат декларирани по няколко начина. Един от тях е чрез ключовата дума function, следвана от името на функцията и списък с параметрите в скоби (), след което тялото на функцията във фигурни скоби {}. Например:
+      <br>
+      <code class="bold">
+        function greet(name) {
+        <br>
+        console.log("Hello, " + name + "!");
+        <br>
+        }</code>
+    </li>
+    <hr>
+
+    <li class="description"><span class="bold">Извикване на функции: </span> За да извикате функция, използвайте нейното име, последвано от скоби (), които могат да съдържат аргументите, подадени на функцията при извикването й. Например:
+      <br>
+      <code class="bold">
+        greet("John");
+       </code>
+    </li>
+    <hr>
+
+    <li class="description"><span class="bold">Връщане на стойност от функция: </span>Функциите в JavaScript могат да връщат стойност чрез ключовата дума return. Това позволява на функцията да върне резултат след като бъде извикана. Например:
+      <br>
+      <code class="bold">
+        function add(a, b) {
+        <br>
+        return a + b;
+        <br>
+        }
+        <br>
+        var result = add(3, 5);
+        <br><br>
+        console.log(result); // Очакван изход: 8
+      </code>
+    </li>
+    <hr>
+
+    <li class="description"><span class="bold">Анонимни функции: </span>Анонимните функции са функции без име и се използват често като аргументи за други функции или при деклариране на променливи. Например:
+      <br>
+      <code class="bold">
+        var greet = function(name) {
+        <br>
+        console.log("Hello, " + name + "!");
+        <br>
+        };
+        <br><br>
+        greet("John");
+      </code>
+    </li>
+    <hr>
+
+
+    <li class="description"><span class="bold">Ламбда функции (arrow functions): </span>Ламбда функциите са нова функционалност в ECMAScript 6 (ES6), която представлява по-кратък синтаксис за създаване на анонимни функции. Те се пишат чрез стрелката =>. Например:
+      <br>
+      <code class="bold">
+        var greet = (name) => {
+        <br>
+        console.log("Hello, " + name + "!");
+        <br>
+        };
+        <br><br>
+        greet("John");
+      </code>
+    </li>
+    <hr>
+  </ul>
+  <p class="description-medium bold">Функциите в <span class="yellow">JavaScript</span> са мощен инструмент за организиране на кода и могат да бъдат използвани за създаване на повторно използваеми блокове от логика. Те играят ключова роля в модерното програмиране и се използват широко във всички видове приложения.</p>
+</main>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript-Arrays</title>
+  <link href="../css/configuration.css" rel="stylesheet">
+  <link href="../css/html.css" rel="stylesheet">
+</head>
+<body>
+<header>
+  <h1 class="text-center title-yellow">Масиви</h1>
+  <hr>
+</header>
+<main>
+  <p class="description-medium">Масивите в <span class="bold yellow">JavaScript</span> са структури данни, които позволяват съхраняването на множество елементи под една променлива. Те се използват широко за съхранение на колекции от данни като числа, низове, обекти и други. Ето подробна информация за масивите:</p>
+  <ul>
+    <li class="description"><span class="bold">Създаване на масив: </span>Масивът в JavaScript се създава чрез квадратни скоби [] и елементите му се разделят със запетая. Например:
+      <br>
+      <code class="bold">
+        var numbers = [1, 2, 3, 4, 5];
+        <br>
+        var fruits = ["apple", "banana", "orange"];</code>
+    </li>
+    <hr>
+
+    <li class="description"><span class="bold">Достъп до елементи: </span>За да достъпите елемент от масив, използвайте индекса на елемента в квадратни скоби []. Индексите започват от 0. Например:
+      <br>
+      <code class="bold">
+        var numbers = [1, 2, 3, 4, 5];
+        <br>
+        console.log(numbers[0]); // Очакван изход: 1
+        <br>
+        console.log(numbers[2]); // Очакван изход: 3
+       </code>
+    </li>
+    <hr>
+
+    <li class="description"><span class="bold">Промяна на елементи: </span>Елементите в масива могат да бъдат променяни като присвоявате нови стойности на съответните им индекси. Например:
+      <br>
+      <code class="bold">
+        var numbers = [1, 2, 3, 4, 5];
+        <br>
+        numbers[2] = 10;
+        <br>
+        console.log(numbers); // Очакван изход: [1, 2, 10, 4, 5]
+      </code>
+    </li>
+    <hr>
+
+    <li class="description"><span class="bold">Дължина на масива: </span>За да получите броя на елементите в масива, използвайте свойството length. Например:
+      <br>
+      <code class="bold">
+        var numbers = [1, 2, 3, 4, 5];
+        <br>
+        console.log(numbers.length); // Очакван изход: 5
+      </code>
+    </li>
+    <hr>
+
+    <li class="description"><span class="bold">Добавяне на елементи: </span>Можете да добавите нов елемент в края на масива, като използвате метода push(). Например:
+      <br>
+      <code class="bold">
+        var fruits = ["apple", "banana"];
+        <br>
+        fruits.push("orange");
+        <br>
+        console.log(fruits); // Очакван изход: ["apple", "banana", "orange"]
+      </code>
+    </li>
+    <hr>
+
+    <li class="description"><span class="bold">Изваждане на елементи: </span>За да извадите последния елемент от масива, използвайте метода pop(). Например:
+      <br>
+      <code class="bold">
+        var fruits = ["apple", "banana", "orange"];
+        <br>
+        var lastFruit = fruits.pop();
+        <br>
+        console.log(lastFruit); // Очакван изход: "orange"
+        <br>
+        console.log(fruits); // Очакван изход: ["apple", "banana"]
+      </code>
+    </li>
+    <hr>
+  </ul>
+  <p class="description-medium bold">Това са основните операции, които можете да извършвате с масиви в <span class="bold yellow">JavaScript</span>. Те са мощен инструмент за работа с колекции от данни и се използват широко в програмирането.</p>
+</main>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML-Metadata</title>
+  <link href="../css/configuration.css" rel="stylesheet">
+  <link href="../css/html.css" rel="stylesheet">
+</head>
+<body>
+<header>
+  <h1 class="text-center title">Метаданни и специални символи</h1>
+  <hr>
+</header>
+<main>
+  <p class="description"><span class="bold">Метатаговете</span> се поставят в заглавна част на уеб страница <code class="orange bold">&lthead&gt</code></p>
+  <p class="description"> <code class="orange bold">&lthead&gt</code> частта е невидима за потребителя. Тя съдържа информация като заглавие, автори,
+    ключови думи, описание, връзки със стилове и скриптове, както и информация за търсещите
+    машини.
+  </p>
+  <img src="../img/metadata.png" class="centered-image">
+  <p class="description">В head частта се поставя информация за метатаговете. Тези тагове не се визуализират в
+    браузъра и служат за описание типа на документа, езика на който е написан, задават
+    поведение на браузъра, като например дали и как да кешира елементите от страницата, дават
+    указание на търсещите машини каква част от сайта да индексират и други. Метатаговете нямат
+    затварящ таг и според изискванията за писане на HTML код наклонената черта се изписва в края
+    на началния таг. </p>
+
+  <p class="description">Някои метатагове се използват при SEO оптимизация (Search Engine Optimization). Като
+    например метатагът description и метатагът keywords. Чрез описанието на страницата и
+    ключовите думи, сайтът е по-лесно откриваем при търсене с търсещите машини в Уеб. Голяма
+    част от търсачките обаче обръщат внимание само на съдържанието на страниците, като
+    игнорират съдържанието на метатаговете за описание и ключови думи.
+  </p>
+
+  <p class="description bold">Метатаговете се разполагат в главата на HTML документа, между тагове <code class="orange bold">&lthead&gt и &lt/head&gt</code>.</p>
+  <hr>
+  <h1 class="text-center title">Видове метатагове и метаданни</h1>
+  <p class="description"> <code class="bold orange">&lttitle&gt</code> тага служи за задаване заглавие на страницата. Таговете <code class="bold orange">&lth1,h2,h3...h6&gt</code> също
+    представят заглавия и подзаглавия, но в тялото на уеб страницата и са видими в браузъра,
+    докато <code class="bold orange">&lttitle&gt</code> е метадданна и представя общото заглавие на html файла.</p>
+
+  <p class="description"> <code class="orange bold"> &ltmeta charset="utf-8"/&gt </code> - Този МЕТА таг указва на браузъра азбуката, на която е
+    написана страницата. В конкретния случай това е указание, че страницата е написана на
+    кирилица. Utf-8 многобайтова кодировка, която поддържа почти всички символи с min
+    усложнения.
+  </p>
+
+  <p class="description"> <code class="orange bold"> &ltmeta name="description" content="Тук се пише кратко описание на сайта."/&gt </code> - Това е МЕТА тагът за описание. До 200 символа.</p>
+
+  <p class="description"> <code class="orange bold"> &ltmeta name="keywords" content="Тук се пишат ключови думи, описващи сайта. Те се отделят със запетаи." /&gt </code> - Това е МЕТА тагът за ключови думи. Те трябва да са така подбрани, че също да дават най-точно описание на съдържанието на сайта. Отделят се една от друга чрез запетаи. До 500 символа.</p>
+
+  <p class="description"> <code class="orange bold"> &ltmeta name="robots" content="Тук се пишат една или две от следните стойности: all, none,
+index, follow, noindex, nofollow" /&gt </code> - Това е МЕТА тагът, който дава указание на търсещите
+    машини каква част от вашия сайт да индексират. Стойностите, които може да укажете в
+    атрибута content са следните: all – индексира страницата и всички нейни връзки; none – без на
+    стр-та и на вс.нейни връзки; index – само началната стр-ца; follow – указва следване на всички
+    връзки на страницата.</p>
+
+  <p class="description"> <code class="orange bold">&ltlink&gt</code>  тага се помества в <code class="orange bold">&lthead&gt</code> с два атрибута – rel и href. Rel - показва, че това е stylesheet на
+    документа, а href – показва пътя до stylesheet файла.</p>
+
+  <p class="description"><code class="orange bold">&ltscript&gt</code> тага отново се помества в <code
+  class = "orange bold" > &lthead&gt </code> частта, със два основни атрибута, src – указва пътя до
+  файла и defer - инструктира браузъра да зареди javascripta след като приключи с парсването на
+  html кода.</p>
+</main>
+</body>
+</html>

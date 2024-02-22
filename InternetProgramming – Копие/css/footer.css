@@ -1,0 +1,11 @@
+#index_footer {
+  background-color: #191919;
+  border-radius: 0.5em;
+}
+
+#index_footer p {
+  color: wheat;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+}

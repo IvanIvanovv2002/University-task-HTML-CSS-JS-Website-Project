@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML-Images</title>
+  <link href="../css/configuration.css" rel="stylesheet">
+  <link href="../css/html.css" rel="stylesheet">
+</head>
+<body>
+<header>
+  <h1 class="text-center title">Работа с изображения</h1>
+  <hr>
+</header>
+<main>
+  <p class="description"><span class="description bold">Изображенията</span> - картинки, фотографии и др., анимирани или статични, са важна част от почти всеки
+    сайт в мрежата. Добре подбрани и разположени, те могат да "освежат" HTML-страницата ви, но
+    претрупването на една страница с изображения може да постигне и обратния ефект, като я направи
+    непривлекателна. Освен това използването на прекалено много изображения ще направи страницата
+    "тежка" и трудна за зареждане.
+  </p>
+  <p class="description">В езикът HTML можем да използваме различни изображения. Можем да ги сложим на страницата с
+    помоща на тага <code>&ltimg&gt</code> и основното допълнение към него SRC.
+    След SRC се записва името на файла и неговото разширение. Ако файлът е в същата папка, в която се
+    намира страницата ни, сним ще се появи. Ако обаче снимката ни е в друга папка трябва към SRC да
+    добавим пътя до снимката според това колко нива по-надолу се намира тя от файла с главната ни
+    страница.
+  </p>
+  <p class="description bold orange">Примери:</p>
+  <p class="description bold">В случай, че изображението се намира в работната ни среда - <code class="bold orange">&ltimg src="example.jpg"&gt</code></p>
+  <p class="description bold">В случай, че изображението е взето чрез URL, то в трябва да се упомене пътя, както и вида HTTP протокол - <code class="bold orange">&ltimg src="https:/example.bg"&gt</code></p>
+  <hr>
+  <h1 class="text-center title">Оразмеряване на изображения</h1>
+  <p class="description">Могат да се задават чрез допълененията <code>style = "width: 50%"</code> и <code>style = "height: 50%"</code>. Ако не ги използваме снимката ще се появи
+    в оригиналния си размер на нашата страницата. Трябва изключително внимателно да подбираме
+    пропорциите на снимката и е препоръчително ако може да не променяме много нейните размери или
+    съотношението им.
+  </p>
+  <p class="description bold orange">Пример:</p>
+  <p class="description bold"> <code>&ltimg SRC="image\example.jpg" width="50" height="50"&gt</code> </p>
+  <hr>
+  <h1 class="text-center title">Използване на изображението като препратка чрез хиперлинк</h1>
+  <p class="description">В случай че желаем нашето изображение да препраща потребителите, след като бъде кликнато на него, ние може да използваме тага <code class="orange description bold">&lta&gt</code> ,
+    обграждайки самият таг <code class="description bold orange">&ltimg&gt</code></p>
+  <p class="description bold orange">Пример: </p>
+  <p class="description bold"> <code>&lta href="http://www.google.bg" target="_blank"&gt&ltimg src="image\example.jpg" alt="Описание на изображението"&gt&lt/a&gt</code></p>
+</main>
+</body>
+</html>

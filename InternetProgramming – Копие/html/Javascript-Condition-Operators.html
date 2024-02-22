@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript-Conditions</title>
+  <link href="../css/configuration.css" rel="stylesheet">
+  <link href="../css/html.css" rel="stylesheet">
+</head>
+<body>
+<header>
+  <h1 class="text-center title-yellow">Условни оператори</h1>
+  <hr>
+</header>
+<main>
+  <p class="description-medium">В  <span class="bold yellow">JavaScript</span> условните оператори се използват за вземане на решения в зависимост от различни условия. Те включват оператори като <code class="bold">if, else if, else,switch-case и тернарни оператори. </code> Ето какво представляват тези оператори и как се използват:</p>
+  <ul>
+    <li class="description"><span class="bold">If оператор:</span> операторът се използва, за да се изпълни блок от код, ако дадено условие е истина (true).<br>  <code class="bold">if (условие) {
+      // код, който се изпълнява, ако условието е истина
+      } </code> </li>
+
+    <hr>
+
+    <li class="description"><span class="bold">else if оператор: </span>операторът се използва, за да се провери допълнително условие, ако първото условие е лъжа (false).<br>  <code class="bold">if (условие1) { <br>
+      // код, който се изпълнява, ако условие1 е истина
+      <br>
+      } else if (условие2) {
+      // код, който се изпълнява, ако условие2 е истина
+      } </code> </li>
+
+    <hr>
+
+    <li class="description"><span class="bold">else оператор: </span> операторът се използва, за да се изпълни блок от код, ако нито едно от предходните условия не е истина. <br>  <code class="bold">if (условие1) { <br>
+      // код, който се изпълнява, ако условие1 е истина
+      <br>
+      } else if (условие2) {
+      <br> // код, който се изпълнява, ако условие2 е истина
+      <br> } else { код в случай че нито едно от условията не е вярно. } </code> </li>
+
+    <hr>
+
+    <li class="description"><span class="bold">switch оператор: </span>операторът се използва, за да се избере измежду няколко възможни блока от код, в зависимост от стойността на една променлива.
+      <br> <code class="bold">switch (израз) { <br>
+        case стойност1:
+        <br>
+        // код, който се изпълнява, ако изразът има стойност стойност1
+        <br>
+        break;
+        <br>
+        case стойност2:
+        <br>
+        // код, който се изпълнява, ако изразът има стойност стойност2
+        <br>
+        break;
+        <br>
+        default:
+        // код, който се изпълнява, ако нито една от предходните стойности не съвпада с израза
+        <br>
+        }</code>
+    </li>
+
+    <hr>
+    <li class="description"><span class="bold">тернарен оператор: </span>Тернарният оператор е кратка форма за изразяване на условия. Той позволява да се избира между два израза в зависимост от стойността на дадено условие. Синтаксисът на тернарния оператор е: <code class="bold">условие ? израз1 : израз2;</code>
+      <br>
+      <code class="bold">
+        var age = 20;
+        <br>
+        var status = (age >= 18) ? "Пълнолетен" : "Непълнолетен";
+        <br>
+        console.log(status); // Очакван изход: "Пълнолетен"</code>
+    </li>
+  </ul>
+</main>
+</body>
+</html>

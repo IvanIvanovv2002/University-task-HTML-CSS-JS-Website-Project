@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript-Objects</title>
+  <link href="../css/configuration.css" rel="stylesheet">
+  <link href="../css/html.css" rel="stylesheet">
+</head>
+<body>
+<header>
+  <h1 class="text-center title-yellow">Обекти</h1>
+  <hr>
+</header>
+<main>
+  <p class="description-medium">Обектите в <span class="yellow">JavaScript</span> са основен тип данни, който се използва за съхранение на данни във вид на ключ-стойностни двойки. Обектите могат да съдържат различни видове данни като примитивни типове данни (като числа, низове, булеви стойности), както и други обекти, масиви и дори функции. Ето основна информация за обектите в <span class="yellow">JavaScript</span>:</p>
+  <ul>
+    <li class="description"><span class="bold">Създаване на обекти: </span>Обектите в JavaScript се създават чрез фигурни скоби {} и се състоят от нула или повече ключ-стойностни двойки, разделени със запетая. Например:
+      <br>
+      <code class="bold">
+        var person = {
+        <br>
+        name: "John",
+        <br>
+        age: 30,
+        <br>
+        city: "New York"
+        <br>
+        };
+      </code>
+    </li>
+    <hr>
+
+    <li class="description"><span class="bold">Достъп до свойства: </span>За да получите достъп до свойствата на обект, използвайте точка . след името на обекта, следвано от името на свойството. Например:
+      <br>
+      <code class="bold">
+        console.log(person.name); // Очакван изход: "John"
+        <br>
+        console.log(person.age); // Очакван изход: 30
+      </code>
+    </li>
+    <hr>
+
+    <li class="description"><span class="bold">Промяна на свойства: </span>Свойствата на обектите могат да бъдат променяни, като присвоявате нови стойности на съществуващи свойства или добавяте нови свойства. Например:
+      <br>
+      <code class="bold">
+        person.age = 35; // Промяна на стойността на съществуващо свойство
+        <br>
+        person.gender = "male";
+      </code>
+    </li>
+    <hr>
+
+    <li class="description"><span class="bold">Изтриване на свойства: </span>За да изтриете свойство от обект, използвайте оператора delete. Например:
+      <br>
+      <code class="bold">
+        delete person.age;
+      </code>
+    </li>
+    <hr>
+
+    <li class="description"><span class="bold">Проучване на обекти: </span>За да проучите свойствата на обекта, можете да използвате цикъл for...in. Например:
+      <br>
+      <code class="bold">
+        for (var key in person) {
+        <br>
+        console.log(key + ": " + person[key]);
+        <br>
+        }
+      </code>
+    </li>
+    <hr>
+
+    <li class="description"><span class="bold">Вградени методи и свойства: </span>Обектите в JavaScript имат вградени методи и свойства, като например Object.keys(), Object.values(), Object.entries(), които позволяват манипулирането на обектите по различни начини.</li>
+    <hr>
+  </ul>
+  <p class="description-medium bold">Обектите в <span class="yellow">JavaScript</span> са мощен инструмент за организация на данните и логиката в програмите. Те се използват широко във всички видове приложения, от уеб разработка до създаване на backend системи и много други.</p>
+</main>
+
+</body>
+</html>

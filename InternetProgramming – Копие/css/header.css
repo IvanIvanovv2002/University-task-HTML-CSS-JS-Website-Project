@@ -1,0 +1,73 @@
+.title {
+  margin-top: 0;
+  text-align: center;
+  font-size: 56px;
+  color: darkorange;
+}
+
+.title-smaller{
+  margin-top: 0;
+  text-align: center;
+  font-size: 48px;
+  color: darkorange;
+}
+
+.title-smaller:hover {
+  color: orange;
+}
+
+.title:hover {
+  color: orange;
+}
+
+#header {
+  position: relative;
+  background-color: whitesmoke;
+  border-radius: 1em;
+}
+
+#header:hover {
+  background-color: antiquewhite;
+}
+
+#logo {
+  width: 200px;
+  height: 150px;
+  float: right;
+}
+
+#logo-smaller {
+  background: transparent !important;
+  margin-top: 10px;
+  width: 200px;
+  height: 130px;
+  float: right;
+}
+
+.navigation {
+  text-align: center;
+  margin: 0 1em;
+  padding-bottom: 1em;
+}
+
+.navigation li {
+  display: inline;
+  list-style: none;
+  margin-right: 1em;
+  margin-bottom: 3em;
+}
+
+.navigation a {
+  font-weight: bold;
+  font-size: 28px;
+  text-decoration: none;
+  border-right: 1px solid gray;
+  border-left: 1px solid gray;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  color: lightblue;
+}
+
+.navigation a:hover {
+  color: deepskyblue;
+}

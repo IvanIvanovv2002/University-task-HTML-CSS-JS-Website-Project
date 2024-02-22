@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript-JSON</title>
+  <link href="../css/configuration.css" rel="stylesheet">
+  <link href="../css/html.css" rel="stylesheet">
+</head>
+<body>
+<header>
+  <h1 class="text-center title-yellow">JSON - JavaScript Object Notation</h1>
+  <hr>
+</header>
+<p class="description-medium">JSON (JavaScript Object Notation) е лек, текстов формат за обмен на данни, който се използва за предаване на структурирани данни между различни компютърни системи. JSON е базиран на синтаксиса на <span class="yellow">JavaScript</span>, но е независим от езика и се използва широко в много програмни езици.</p>
+<p class="description bold">Ето някои ключови характеристики на JSON в контекста на <span class="yellow">JavaScript</span>:</p>
+<ul>
+  <li class="description"><span class="bold">Синтаксис: </span> JSON се състои от два основни типа структури - обекти и масиви. Обектите в JSON се описват във вид на ключ-стойностни двойки, разделени със запетаи и оградени с фигурни скоби {}. Масивите в JSON са списъци от стойности, разделени със запетаи и оградени с квадратни скоби []. Например:
+    <br>
+    <code class="bold">
+      {
+      <br>
+      "name": "John",
+      <br>
+      "age": 30,
+      <br>
+      "city": "New York",
+      <br>
+      "hobbies": ["reading", "running", "cooking"],
+      <br>
+      "address": {
+      <br>
+      "street": "123 Main St",
+      <br>
+      "city": "Anytown",
+      <br>
+      "zip": "12345"
+      <br>
+      }
+      <br>
+      }
+    </code>
+  </li>
+  <hr>
+
+  <li class="description"><span class="bold">Данни и типове: </span>JSON поддържа различни типове данни, включително низове, числа, булеви стойности, масиви, обекти и null. Той не поддържа специфични типове данни, като функции или обекти с методи.</li>
+  <hr>
+
+  <li class="description"><span class="bold">Използване в JavaScript: </span>В JavaScript, JSON се използва за обмяна на данни между клиентския и сървърния код, като се използват методите JSON.parse() и JSON.stringify(). JSON.parse() се използва за преобразуване на JSON низ към обект, докато JSON.stringify() се използва за преобразуване на JavaScript обект или стойност към JSON низ.
+    <br>
+    Например, за да преобразувате обект в JSON низ:
+    <br>
+    <br>
+    <code class="bold">
+      var obj = { name: "John", age: 30 };
+      <br>
+      var jsonStr = JSON.stringify(obj);
+      <br>
+      console.log(jsonStr); // Очакван изход: {"name":"John","age":30}
+      <br>
+    </code>
+    <br>
+    За да преобразувате JSON низ в обект:
+    <br>
+    <code class="bold">
+      var jsonStr = '{"name":"John","age":30}';
+      <br>
+      var obj = JSON.parse(jsonStr);
+      <br>
+      console.log(obj.name); // Очакван изход: "John"
+    </code>
+  </li>
+  <hr>
+
+  <li class="description"><span class="bold">Поддръжка: </span>JSON е поддържан от почти всички съвременни програмни езици и е популярен формат за обмяна на данни в мрежовите комуникации. Той се използва широко в уеб разработката за комуникация между клиентски и сървърни приложения.</li>
+  <hr>
+</ul>
+<p class="description-medium bold">JSON е удобен и ефективен формат за обмяна на данни и се използва широко в много различни приложения. Той е лесен за четене и разбиране както от хора, така и от машини, което го прави предпочитан избор за обмяна на данни във всякакъв вид приложения.</p>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript-DOM</title>
+  <link href="../css/configuration.css" rel="stylesheet">
+  <link href="../css/html.css" rel="stylesheet">
+  <script src="../js/DOM-Example.js"></script>
+</head>
+<body>
+<header>
+  <h1 class="text-center title-yellow">Документален обектен модел - DOM</h1>
+  <hr>
+</header>
+<main>
+  <p class="description-medium">DOM (Document Object Model) в <span class="yellow">JavaScript</span> е структура от обекти, която представлява структурата на уеб страницата или XML документа като дървовидна йерархия. DOM позволява на разработчиците да манипулират структурата, стиловете и съдържанието на уеб страницата чрез <span class="yellow">JavaScript</span>.</p>
+  <p class="description bold">Ето някои ключови характеристики и аспекти на DOM в <span class="yellow">JavaScript</span>:</p>
+  <ul>
+    <li class="description"><span class="bold">Структура на DOM: </span>DOM се представя като дървовидна структура от обекти, където всеки елемент в уеб страницата се представя като обект, наречен възел. Възлите в DOM са организирани в йерархия, като всеки възел може да има родител, деца и съседи. HTML елементите са представени като възли от тип Element, а текстовите съдържания като възли от тип Text.</li>
+    <hr>
+
+    <li class="description"><span class="bold">Достъп до елементи: </span>За да получите достъп до елементи в DOM, можете да използвате различни методи, като например <span class="orange bold">getElementById(), getElementsByClassName(), getElementsByTagName(), querySelector(), querySelectorAll()</span> и други. <br> Например:
+      <br>
+      <code class="bold">var element = document.getElementById("myElement");</code>
+    </li>
+    <hr>
+
+    <li class="description"><span class="bold">Манипулиране на елементи: </span>Можете да променяте атрибутите, стиловете и съдържанието на елементи в DOM, като използвате свойствата и методите на елементите. <br> Например:
+      <br>
+      <code class="bold">
+        element.textContent = "Нов текст";
+        <br>
+        element.style.color = "red";
+      </code>
+    </li>
+    <hr>
+
+
+    <li class="description"><span class="bold">Събития и обработка на събития: </span>DOM позволява добавянето на слушатели за различни събития, като щракване на мишката, натискане на клавиши, зареждане на страницата и други. Това позволява на приложенията да реагират на потребителски действия и събития. <br>Например:
+      <br>
+      <code class="bold">
+        element.addEventListener("click", function() {
+        <br>
+        console.log("Елементът беше щракнат.");
+        <br>
+        });
+      </code>
+    </li>
+    <hr>
+
+    <li class="description"><span class="bold">Създаване на елементи: </span>Можете да създавате нови елементи и да ги добавяте към DOM дървото чрез JavaScript. <br> Например:
+      <br>
+      <code class="bold">
+        var newElement = document.createElement("div");
+        <br>
+        newElement.textContent = "Нов елемент";
+        <br>
+        document.body.appendChild(newElement);
+      </code>
+    </li>
+    <hr>
+
+    <li class="description"><span class="bold">Премахване на елементи: </span>Можете също така и да премахвате елементи от HTML документа, чрез DOM.<br> Например:
+      <br>
+      <code class="bold">
+        removeButton.addEventListener("click", function() {
+        <br>
+        // Премахваме параграфа от DOM дървото
+        <br>
+        paragraph.parentNode.removeChild(paragraph);
+        <br>
+        });
+      </code>
+    </li>
+    <hr>
+
+    <li class="description"><span class="bold">Навигация в DOM: </span>Можете да навигирате в DOM дървото, като използвате различни свойства на елементите, като <span class="bold orange">parentNode, childNodes, firstChild, lastChild, nextSibling, previousSibling</span> и други.</li>
+    <hr>
+  </ul>
+
+  <h1 class="text-center title-yellow">Визуален пример за използване на DOM дървото</h1>
+
+  <div class="number-container">
+
+    <form class="add-number" autocomplete="on">
+      <label for="name">
+        Име
+        <input type="text" required id="name">
+      </label>
+      <label for="mobile-number">
+        Телефонен номер
+        <input type="text" required id="mobile-number">
+      </label>
+      <button type="submit" class="add-button">Add number</button>
+    </form>
+
+    <section class="number">
+      <span class="name">Димитър Страхинов</span>
+      <span class="mobile-number">0988365213</span>
+      <button type="submit" class="remove-button">Remove</button>
+    </section>
+
+    <section class="number">
+      <span class="name">Иван Иванов</span>
+      <span class="mobile-number">0899345123</span>
+      <button type="submit" class="remove-button">Remove</button>
+    </section>
+
+    <section class="number">
+      <span class="name">Мария Стойчева</span>
+      <span class="mobile-number">08771238921</span>
+      <button type="submit" class="remove-button">Remove</button>
+    </section>
+
+    <section class="number">
+      <span class="name">Георги Първанов</span>
+      <span class="mobile-number">0893518961</span>
+      <button type="submit" class="remove-button">Remove</button>
+    </section>
+  </div>
+
+</main>
+</body>
+</html>

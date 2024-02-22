@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS-Fonts && Text</title>
+  <link href="../css/configuration.css" rel="stylesheet">
+  <link href="../css/html.css" rel="stylesheet">
+</head>
+<body>
+<header>
+  <h1 class="text-center title-blue">Стилизиране на текст и форматиране на шрифтове</h1>
+  <hr>
+</header>
+<main>
+  <p class="description bold">Стилизацията и форматирането на текст е важна част от дизайна и създаването на уеб сайтове и апликации. Както вече знаем, при използване на HTML без CSS, големината и цвета на текста почти не могат да бъдат променяни с изключение на няколко тага. </p>
+  <p class="description underline">Стилизацията на текст чрез CSS става след като селектираме даденият компонент от HTML документа и му добавим CSS "Надстройки"</p>
+  <hr>
+  <h1 class="text-center title-blue">Как се модифицира текст чрез CSS ?</h1>
+  <p class="description-medium bold ">Нека предположим че трябва да модифираме даденият параграф <code class="bold skyblue">&ltp class="paragraph"&gt blah blah &lt/p&gt </code> , както виждаме тук имаме два варианта. Единият е да го селектираме директно по таг, докато другият вариант е да го селектираме чрез името на класа му. Вторият вариант е по-удачен, защото можем да таргетираме само съответният елемент без да модифицираме останалите параграфи в документа.</p>
+  <p class="description-medium"> <span class="bold">Промяна на големината на шрифта</span> -  .paragraph { <span class="bold">font-weight: число в пиксели</span> }</p>
+  <p class="description-medium"> <span class="bold">Промяна на цвета на текста</span> -  .paragraph { <span class="bold">color: цвят</span> }</p>
+  <p class="description-medium"> <span class="bold">Промяна на вида на шрифта</span> -  .paragraph { <span class="bold">font-style: вид шрифт, italic например</span> }</p>
+  <p class="description-medium"> <span class="bold">Местоположение на текста</span> -  .paragraph { <span class="bold">text-align: място, center например</span> }</p>
+  <p class="description-medium"> <span class="bold">Разстояние между символите</span> -  .paragraph { <span class="bold">letter-spacing: число в пиксели</span> }</p>
+  <p class="description-medium"> <span class="bold">Разстояние между редовете</span> -  .paragraph { <span class="bold">line-height: число в пиксели</span> }</p>
+</main>
+</body>
+</html>

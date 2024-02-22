@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS-Lists</title>
+  <link href="../css/configuration.css" rel="stylesheet">
+  <link href="../css/html.css" rel="stylesheet">
+</head>
+<body>
+<header>
+  <h1 class="text-center title-blue">Модифициране на списъци и контейнери</h1>
+  <hr>
+</header>
+<main>
+  <p class="description-medium">Щом става дума за списъците, CSS предлага многобройни начини за промяна на визуализацията на списъците, например като промяна на стила на маркиране, използване на изображение за маркиране (вместо буллети) и други.</p>
+  <h1 class="text-center title-blue">Често срещани CSS селекции върху списъци</h1>
+  <p class="description-medium">Промяна на стила на маркиране върху неподредени списъци <span class="bold"> ul { list-style-type: square; или disc, circle, none } </span></p>
+  <p class="description-medium">Промяна на стила на маркиране върху подредени списъци <span class="bold"> ol { list-style-type: decimal; или lower-alpha, upper-roman, none } </span></p>
+  <p class="description-medium">Използване на изображение за маркиране (вместо булет): <span class="bold"> list-style-image: url('example.png'); </span></p>
+  <p class="description-medium">Промяна на стила на маркиране само за определени елементи: <span class="bold"> li:first-child {font-weight: bold;} </span></p>
+  <p class="description-medium">Задаване на позицията на маркерите: <span class="bold"> list-style-position: outside или inside  </span></p>
+  <hr>
+  <h1 class="text-center title-blue">Контейнери</h1>
+  <p class="description-medium">Всеки един елемент, който създаваме в HTML документа се изобразява в браузъра като контейнер и в зависимост от това какъв елемент(таг) сме използвали, контейнерът може да бъде блоков,поредов,блоково-поредов и други. Вида контейнеризация се задава чрез <span class="bold orange">display:</span>  </p>
+  <p class="description-medium bold">Видове контейнери: </p>
+  <ul>
+    <li class="description"> <span class="bold description-medium">display:block;</span> - Елементът се показва като блок елемент, започва на нов ред и заема цялата налична ширина.</li>
+    <li class="description"> <span class="bold description-medium">display:inline;</span> - Елементът се показва като inline елемент, като не започва на нов ред и заема само толкова пространство, колкото е необходимо за съдържанието му.</li>
+    <li class="description"> <span class="bold description-medium">display:inline-block;</span> - Елементът се показва като inline елемент, но може да има широчина и височина и да бъде стилизиран като блок елемент.</li>
+    <li class="description"> <span class="bold description-medium">display:none;</span> - Елементът не се показва на страницата и няма никакво пространство, запазено за него.</li>
+    <li class="description"> <span class="bold description-medium">display:flex;</span> - Елементът заема флекс контейнеризация (за нея ще има отделен урок).</li>
+  </ul>
+</main>
+</body>
+</html>

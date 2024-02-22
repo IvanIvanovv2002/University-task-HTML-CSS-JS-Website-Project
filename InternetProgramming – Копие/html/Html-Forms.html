@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML-Forms</title>
+  <link href="../css/configuration.css" rel="stylesheet">
+  <link href="../css/html.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1 class="text-center title">Създаване на формуляри</h1>
+    <hr>
+  </header>
+  <main>
+    <p class="description bold">
+      Освен за показване на информация WEB страниците могат да служат и за събиране на информация от потребителя. Това става с така наречените формуляри. Езикът HTML не позволява да управлявате информацията във формулярите, а само да ги разполагате на страницата. Двойката елементи за разполагане на формуляри е <code class="description bold orange"> &ltform&gt &lt/form&gt </code>. Между тази двойка елементи могат да се разполагат неограничен брой елементи на формуляр. Всеки един елемент във формуляра се разполага с единичния таг <code class="description bold orange"> &ltinput&gt </code> . Този елемент трябва задължително да съдържа двата атрибута NAME и TYPE. Атрибута NAME задава името на елемента, а TYPE видът му. Нека разгледаме различните стойност на TYPE. С параметърът ACTION се задава скрипта, който се изълнява при потвърждаване на формуляра, а с METHOD, се задава как да бъдат предадени данните към сървъра. Стойностите на METHOD са GET (стойностите на полетата се предават чрез URL адреса) и POST (използва се когато предаваме лична инфорамция, която не желаем да се вижда в URL адреса).
+    </p>
+    <p class="description bold">Пример 1: </p>
+    <p class="description bold"> <code class="orange"> &ltform name="contact" action="contact_page.php" method="post"&gt</code> </p>
+    <p class="description bold">Пример 2:</p>
+    <img src="../img/form1.png" class="centered-image">
+    <hr>
+    <h1 class="text-center title">Видове input тагове</h1>
+    <p class="description bold">Когато използваме тага <code class="bold orange">&ltinput&gt</code>, ние имаме възможност да зададем вида информация, който ще попълнем в него, като по този начин правилата за попълване ще бъдат различни.</p>
+    <p class="description bold"><code class="orange bold"> &ltinput type="text" &gt </code> - При този вид input се дава възможност за попълване на текст, без никаква дискретност или филтриране</p>
+    <p class="description bold"><code class="orange bold"> &ltinput type="password" &gt </code> - Този вид input замаскира информацията която ще се пише във формуляра, като парола.</p>
+    <p class="description bold"><code class="orange bold"> &ltinput type="email" &gt </code> - Този вид input приема само електронни пощи при изпращане на формуляр. При този вид формуляр трябва да съдържа '@' и поне една '.' , като разделител.</p>
+    <p class="description bold"><code class="orange bold"> &ltinput type="file" &gt </code> - Този вид input приема само файлове и видеа. Например ако нашият сайт предлага качване на снимка или видео, то ние трябва да използваме този формуляр.</p>
+    <p class="description bold"><code class="orange bold"> &ltinput type="radio" &gt </code> - Този вид input преобразува нормалното поле за вкарване на информация в кръгово поле, което може да бъде натиснато при желаене на някаква опция.</p>
+    <p class="description bold"><code class="orange bold"> &ltinput type="number" &gt </code> - Този вид input приема само числени стойности.</p>
+    <hr>
+    <h1 class="text-center title">Допълнителни настройки на input тагове</h1>
+    <p class="description bold"><code class="orange bold"> &ltinput required &gt </code> - По този начин задължаваме попълването на този input и в случай, че след запращането на формуляра той е празен, то формуляра няма да бъде изпратен и браузъра ще даде информация че полето е задължително</p>
+    <p class="description bold"><code class="orange bold"> &ltinput ,max="число" &gt </code> - Използва се когато вида формуляр ще приема числени стойности. 'max' полето задава максималната числена стойност която може да бъде приета без браузъра да я отхвърли</p>
+    <p class="description bold"><code class="orange bold"> &ltinput ,min="число" &gt </code> - Използва се когато вида формуляр ще приема числени стойности. 'min' полето задава минималната числена стойност която може да бъде приета без браузъра да я отхвърли</p>
+    <p class="description bold"><code class="orange bold"> &ltinput ,minlength="число" &gt </code> - Използва се когато вида формуляр ще приема текст. 'minlength' полето задава минималния брой символи, който браузъра ще приеме без да отхвърля запращането на формуляра</p>
+    <p class="description bold"><code class="orange bold"> &ltinput ,maxlength="число" &gt </code> - Използва се когато вида формуляр ще приема текст. 'maxlength' полето задава максималния брой символи, който браузъра ще приеме без да отхвърля запращането на формуляра</p>
+  </main>
+</body>
+</html>

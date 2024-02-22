@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript-Variables</title>
+  <link href="../css/configuration.css" rel="stylesheet">
+  <link href="../css/html.css" rel="stylesheet">
+</head>
+<body>
+<header>
+  <h1 class="text-center title-yellow">Променливи</h1>
+  <hr>
+</header>
+<main>
+  <p class="description-medium bold">В <span class="yellow">JavaScript</span> променливите са контейнери за съхранение на данни. Те се използват за съхраняване на стойности, като числа, низове, обекти и други типове данни. Ето някои основни характеристики на променливите в <span class="yellow">JavaScript</span>:</p>
+  <ul>
+    <li class="description"><span class="bold">Типове данни: </span> <span class="yellow">JavaScript</span> е динамично типизиран език, което означава, че типът на променливата се определя автоматично в зависимост от присвоената стойност. Възможни типове данни включват числа, низове, булеви стойности, обекти, масиви и други. За разлика от другите, където ние сме задължени да декларираме типа променлива, която ще използваме, в <span class="yellow">JavaScript</span> можем просто да използваме променливите оператори <code>var,const и let</code></li>
+    <li class="description"><span class="bold">Деклариране на променливи: </span>Променливи в JavaScript се декларират с ключовата дума <code class="bold">var, let или const.</code> <br> Например: <code>var text = 'това е текст'; let number = 15; const floatingNumber = 2.52; </code></li>
+    <li class="description"><span class="bold">Област на видимост: </span>Област на видимост: Областта на видимост на променливите се определя от начина, по който са декларирани. Променливи, декларирани с <code>var</code>, имат функционална област на видимост (functional scope), докато променливи, декларирани с <code>let</code> или <code>const</code>, имат блокова област на видимост (block scope).</li>
+    <li class="description"><span class="bold">Променливи като константи: </span>При деклариране на променлива с <code class="bold">const</code>, стойността на тази променлива не може да бъде променяна след това. Променливите, декларирани с <code class="bold">let</code> или <code class="bold">var</code>, могат да променят стойността си.</li>
+    <li class="description"><span class="bold">Присвояване на стойности: </span>Стойности се присвояват на променливите с оператора за присвояване (=). <br> Например: <code>let x = 15;</code></li>
+  </ul>
+  <hr>
+  <h1 class="text-center title-yellow">Работа с конзолата</h1>
+  <ul>
+    <li class="description"><span class="bold">Извеждането на променлива към конзолата става чрез командата:</span> <code>console.log(име на променлива)</code></li>
+    <li class="description"><span class="bold">Присвояване на стойност чрез конзолата: </span><code>var userInput = prompt("Моля, въведете стойност за променливата:");<br>console.log("Вие въведохте: " + userInput);</code></li>
+    <p class="description"><span class="warning">ВАЖНО: </span>Моля, обърнете внимание, че prompt() може да бъде блокираща операция, което означава, че изпълнението на скрипта може да бъде спряно, докато потребителят въведе стойност. Това може да създаде проблеми, ако вашата програма трябва да продължи да работи, без да чака за вход от потребителя. За по-сложни сценарии може да използвате асинхронен вход/изход, използвайки събития или промиси.</p>
+  </ul>
+
+</main>
+</body>
+</html>
